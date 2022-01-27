@@ -6,7 +6,7 @@
 
     `*` - при работе с git
 
-0. [Установить nodejs](https://clck.ru/V9Qx2)
+0. [Установить nodejs](https://nodejs.org/en/download/)
 
 0. Клонировать репозиторий:
     * Скачать проект (для работы без git)
