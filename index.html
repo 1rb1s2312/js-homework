@@ -1,13 +1,195 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="JS course demo"/>
-    <title>JS course</title>
-</head>
-<body>
-    <p>Разметка</p>
-</body>
+<html lang="RU">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style-header.css">
+        <link rel="stylesheet" href="style-preview.css">
+        <link rel="stylesheet" href="style-news.css">
+        <link rel="stylesheet" href="style-popup.css">
+        <title>Школа по фронтенду</title>
+    </head>
+    <body>
+        <header class="header">
+            <span class="logo-bank">
+                <img class="logo-bank" src="image/logo-raiffeisen-bank.jpeg" alt="logo-raiffeisen-bank">
+            </span>
+            <nav class="nav-horizontal mr-1">
+                <div class="nav-horizontal-empl"> Данилов Владимир <img class="logo-empl" src="image/ava.png" alt="ava"> </div>
+                <div > <a href="http://raiffeisen.ru"><img class="logo-exit" src="image/Exit.svg" alt="Exit"></a></div>
+            </nav>
+        </header>
+        <main class="main-font">
+            <div class="container">
+                <div class="events"> 
+                    <p class="events-preview">Ближайшие мероприятия</p>
+                    <p class="events-title">Школа по фронтенду</p>
+                    <p class="events-date">25.05.2020  ·  Офис в Нагатино</p>
+                    <p> <button class="events-but-registr">Записаться на курс</button></p>
+                    <!--<p class="events-button-record_row>"><input type="button" value="Записаться на курс" class="events-button-record"></p>-->
+                    <p class="events-background"></p>
+                </div>
+                <h1 class="news-anons">Все мероприятия</h1>
+                <div class="nav-button-basic">
+                <div class="nav-button">
+                    <input id="news01" type="radio" name="group_news" value="1">
+                    <label for="news01" >IT Academy</label>
+                </div>
+                <div class="nav-button">
+                    <input id="news02" type="radio" name="group_news" value="2">
+                    <label for="news02">Маркетинг</label>
+                </div>
+                <div class="nav-button">
+                    <input id="news03" type="radio" name="group_news" value="3">
+                    <label for="news03">Retail</label>
+                </div>
+                <div class="nav-button">
+                    <input id="news04" type="radio" name="group_news" value="4">
+                    <label for="news04">Остальные</label>
+                </div>
+            </div>
+                <section class="news">
+                    <div class="news-post">
+                        <div class="news-post-date">
+                            <label class="news-post-date-label">25.05.2020</label>
+                        </div>
+                        <div class="news-post-header">
+                            <p class="news-post-header-title">
+                                Венецианский карнавал танцев и богохульных плясок: смотрим вместе
+                            </p>
+                            <p class="news-post-header-text">
+                                К посещению приглашаются сотрудники 18-
+                            </p>
+                        </div>
+                        <div class="news-post-like">
+                            <img class="news-post-like-img" src="image/shape.png"> <label class="news-post-like-count">11</label>
+                        </div>
+                        <div class="news-post-author">
+                            <label class="news-post-author-label">Иннокентий Жданов
+                                Поликарпов Осипий
+                            </label>
+                        </div>
+                        <div class="news-post-registration">
+                            <button class="news-but-registr">Зарегистрироваться</button>
+                        </div>
+                    </div>
+
+                    <div class="news-post">
+                        <div class="news-post-date">
+                            <label class="news-post-date-label">25.05.2020</label>
+                        </div>
+                        <div class="news-post-header">
+                            <h4 class="news-post-header-title">
+                                Солнцестоим вместе или как провести выходные продуктивно
+                            </h4>
+                            <div class="news-post-header-text">
+                                Если вы любите солнце и стоять - то данный курс вам очень подойдет. Мы вместе будем стоять и смотреть на солнце. Чистый кайф.
+                            </div>
+                        </div>
+                        <div class="news-post-like">
+                            <img class="news-post-like-img" src="image/shape.png"> <label class="news-post-like-count">110</label>
+                        </div>
+                        <div class="news-post-author">
+                            <label class="news-post-author-label">Николай Острецов</label>
+                        </div>
+                        <div class="news-post-registration">
+                            <button class="news-but-registr_close" >Регистрация закрыта</button>
+                        </div>
+                    </div>
+
+                    <div class="news-post">
+                        <div class="news-post-date">
+                            <label class="news-post-date-label">25.05.2020</label>
+                        </div>
+                        <div class="news-post-header">
+                            <h4 class="news-post-header-title">
+                                Бредовые макеты и как с ними работать: спич о проблемах друзей фронтендеров
+                            </h4>
+                            <div class="news-post-header-text">
+                                Что делать если в дизайне, который отправил вам дизайнер, написаны бредовые тексты? Посмеяться?! Это что для вас шуточки?!
+                            </div>
+                        </div>
+                        <div class="news-post-like">
+                            <img class="news-post-like-img" src="image/shape.png"> <label class="news-post-like-count">11</label>
+                        </div>
+                        <div class="news-post-author">
+                            <label class="news-post-author-label">Акакий Шопский</label>
+                        </div>
+                        <div class="news-post-registration">
+                            <button class="news-but-registr">Зарегистрироваться</button>
+                        </div>
+                    </div>
+
+                    <div class="news-post">
+                        <div class="news-post-date">
+                            <label class="news-post-date-label">25.05.2020</label>
+                        </div>
+                        <div class="news-post-header">
+                            <h4 class="news-post-header-title">
+                                Аукцион: лоснящаяся шкура золотого дракона Монина. Что скрывается в подвале офиса Нагатино?
+                            </h4>
+                            <div class="news-post-header-text">
+                                Если у вас ещё осталась зарплата: приходите, мы будем рады её забрать
+                            </div>
+                        </div>
+                        <div class="news-post-like">
+                            <img class="news-post-like-img" src="image/shape.png"> <label class="news-post-like-count">11</label>
+                        </div>
+                        <div class="news-post-author">
+                            <label class="news-post-author-label">Иван Стручков</label>
+                        </div>
+                        <div class="news-post-registration">
+                            <button class="news-but-registr_close" disabled>Регистрация закрыта</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="popup-bgr hidden">
+                <div class="popup">
+                    <div class="popup-title">
+                        <div class="popup-title-text">Запись на мероприятие</div>
+                        <button class="popup-but-close"><img src="image/Close_popup.png" alt="close"></button>
+                    </div>
+                    <div class="popup-prompt">Выберите необходимые мероприятия</div>
+                    <div class="popup-events">
+                        <div class="popup-events-title">Венецианский карнавал танцев и богохульных плясок: смотрим вместе</div>
+                        <div class="popup-events-comment">К посещению приглашаются сотрудники 18-</div>
+                    </div>
+                    <div class="popup-buttons">
+                        <div class="popup-buttons-item">
+                            <input id="but_online" type="radio" name="type_registr" value="1">
+                            <label for="but_online">Онлайн</label>
+                        </div>
+                        <div class="popup-buttons-item">
+                            <input id="but_offline" type="radio" name="type_registr" value="2">
+                            <label for="but_offline">Оффлайн: офис Нагатино</label>
+                        </div>
+                    </div>
+                    <div class="popup-member">
+                        <div class="popup-member-prompt">Кто пойдет на мероприятие</div>
+                        <div class="popup-member-cont">
+                            <div class="popup-member-name">Логин или имя сотрудника</div>
+                        </div>
+                    </div>
+                    <div class="popup-comment">
+                        <div class="popup-comment-prompt">Комментарий</div>
+                        <div class="popup-comment-cont">
+                            <div class="popup-comment-text">Дополнительная информация</div>
+                        </div>
+                    </div>
+                    <div class="popup-button-events">
+                        <div class="popup-button-events-ghost">
+                        <div class="popup-button-events-reg"></div>
+                            <button class="but_registr">Зарегестрироваться</button>
+                        <label class="but_cancel">Отменить</label>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </body>
+    <head>
+
+    </head>
 </html>

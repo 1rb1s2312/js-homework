@@ -1,0 +1,195 @@
+.main-font{
+    /* font-family: 'Arial'; */
+    font-family: 'ALS Hauss';
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    margin: 47px auto 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1030px;
+    box-sizing: border-box;
+
+    align-items: center;
+   
+    /*border: 1px solid #e0dfdf;*/
+}
+
+@media (max-width:1024px) {
+    .container{
+        width: 100%;
+        padding: 32px;
+        box-sizing: border-box;
+        margin: 48px auto 0px;
+    }
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+    /*position: absolute;*/
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    /* margin-top: 47px; */
+    background-color:   #CFF1E9;
+    border-radius: 32px;
+    padding: 48px;
+    
+    background-image: url(image/Saly-1.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 1024px){
+    .events{
+    width: 100%;
+    margin-right: 32px;
+    }
+}
+
+.events-background{
+    background-image: url(image/Saly-1.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    transform: rotate(-2.9deg);
+}
+
+.events-preview{
+display: flex;
+align-items: center;
+
+width: 172px;
+height: 22px;
+
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+
+/* Brand / Primary */
+color: #2B2D33;
+}
+
+.events-title{
+    /* Школа по фронтенду */
+
+    display: flex;
+width: 418px;
+height: 56px;
+
+font-family: 'Navigo';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 56px;
+/* identical to box height, or 140% */
+
+/* Brand / Primary */
+color: #2B2D33;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.events-date{
+    position: static;
+width: 209px;
+height: 22px;
+margin-top: 0px;
+
+/* M / 14 Medium */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+display: flex;
+align-items: center;
+
+/* Brand / Primary */
+color: #2B2D33;
+
+
+/* Inside auto layout */
+flex: none;
+/*order: 1;*/
+flex-grow: 0;
+}
+
+.events-but-registr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 11px 24px;
+width: 197px;
+height: 48px;
+left: 0px;
+top: 168px;
+
+/* Brand / Primary */
+background: #2B2D33;
+
+border: none;
+border-radius: 8px;
+
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+}
+
+.events-button-record{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 197px;
+    height: 48px;
+    left: 0px;
+    top: 168px;
+
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    
+    /* Brand / Primary */
+    background: #2B2D33;
+    border-radius: 8px;
+}
+
+.events-button-record label{
+    
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /* Brand / White */
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+} 

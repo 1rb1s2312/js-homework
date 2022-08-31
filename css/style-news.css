@@ -1,0 +1,567 @@
+/* Блок новостей*/
+.news-anons{
+    display: flex;
+    align-self: flex-start;
+
+    font-family: 'Navigo';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+}
+
+.nav-chapter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-self: flex-start;
+}
+
+.nav-chapter ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.nav-chapter li{
+    padding: 10px;
+}
+
+.nav-button-basic{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding-bottom: 32px;
+}
+
+.nav-button{
+
+display: inline-block;
+align-items: center;
+/* padding: 5px 16px; сохранять пропорции получается без паддинга*/
+
+background: #F4F4F4;
+height: 32px;
+border-radius: 16px;
+
+
+/* border: 1px solid RED; */
+
+margin: 0px 8px;
+}
+
+ .nav-button input[type=radio]{
+    display: none;
+}
+
+.nav-button label{
+
+    display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	/* border: 1px solid #999; */
+    height: 32px;
+	border-radius: 16px;
+	user-select: none;
+    background: #F4F4F4;
+
+    
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: #2B2D33;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* margin: 0px 10px; сохранять пропорции получается без маржина */
+} 
+
+.nav-button input[type=radio]:checked + label{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: #2B2D33;
+    display: flex;
+    border-radius: 16px;
+    font-family: 'ALS Hauss';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+.nav-button input[type=radio]:checked + label{
+    background: #2B2D33;
+	color: #FFFFFF;
+}
+
+.news{
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+margin: 0px;
+
+position: static;
+width: 100%;
+max-width: 1030px;
+height: 100%;
+max-height: 374px;
+left: 0px;
+top: 136px;
+
+
+/* Inside auto layout
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 32px 0px; */
+}
+
+.news-post{
+    /* display: flex;
+    flex-direction: row; */
+    /* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 100%;
+max-width: 1030px;
+height: 100%;
+max-height: 90px;
+left: 0px;
+top: 0px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.news-post-date{
+    /* width: 10%; */
+    /* Cell */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 8px;
+
+position: static;
+width: 109px;
+height: 46px;
+left: 0px;
+top: 0px;
+
+/* Brand / White */
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+
+}
+
+.news-post-date-label{
+    position: static;
+width: 78px;
+height: 22px;
+left: calc(50% - 78px/2 - 7.5px);
+top: calc(50% - 22px/2);
+
+/* M / 14 Regular */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+/* line-height: 22px; */
+/* identical to box height, or 157% */
+display: flex;
+align-items: center;
+
+/* Brand / Primary */
+color: #2B2D33;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+}
+
+.news-post-header{
+    /* width: 60%; */
+    /* Cell */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 12px 8px;
+
+position: static;
+width: 442px;
+height: 90px;
+left: 109px;
+top: 0px;
+
+/* Brand / White */
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.news-post-header-title{
+    position: static;
+width: 426px;
+left: calc(50% - 426px/2);
+top: calc(50% - 44px/2 - 11px);
+
+/* M / 14 Medium */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+display: flex;
+align-items: center;
+
+/* Brand / Primary */
+color: #2B2D33;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px;
+}
+
+.news-post-header-text{
+    /* Label */
+
+position: static;
+width: 426px;
+height: 18px;
+left: calc(50% - 426px/2);
+top: calc(50% - 18px/2 + 24px);
+
+/* S / 12 Regular */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+/* Seattle / 60 */
+color: #AAABAD;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 4px 0px;
+}
+
+.news-post-like{
+    /* width: 5%; */
+    /* Cell */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 8px 8px;
+
+position: static;
+width: 84px;
+height: 90px;
+left: 551px;
+top: 0px;
+
+/* Brand / White */
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.news-post-like-img{
+    position: static;
+left: 6.25%;
+right: 6.25%;
+top: 10.42%;
+bottom: 11.13%;
+
+Width: 14px;
+Height: 12.55px;
+Top: 1.67px;
+Left: 1px;
+margin-top: 4px;
+}
+
+.news-post-like-count{
+    position: static;
+width: 13px;
+/* height: 22px; */
+line-height: 14px;
+left: calc(50% - 13px/2 + 10px);
+/* top: calc(50% - 22px/2); */
+
+/* M / 14 Medium */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+display: flex;
+align-items: center;
+
+/* Brand / Primary */
+color: #2B2D33;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 4px;
+}
+
+.news-post-author{
+    /* width: 10%; */
+    /* Cell */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 12px 8px;
+
+position: static;
+width: 193px;
+height: 90px;
+left: 635px;
+top: 0px;
+
+/* Brand / White */
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.news-post-author-label{
+    /* Label */
+
+position: static;
+width: 177px;
+height: 44px;
+left: calc(50% - 177px/2);
+top: calc(50% - 44px/2 - 11px);
+
+/* M / 14 Medium */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+display: flex;
+align-items: center;
+
+/* Oslo / 100 */
+color: #00A5BC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.news-post-registration{
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 12px 8px 16px;
+
+position: static;
+width: 202px;
+height: 90px;
+left: 828px;
+top: 0px;
+
+/* Brand / White */
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.news-but-registr{
+/* Auto layout */
+
+    position: static;
+left: 20px;
+right: 20px;
+top: 7px;
+bottom: 7px;
+
+width: 179px;
+Height: 36px;
+Top: 7px;
+Left: 20px;
+
+background: none;
+box-sizing: border-box;
+padding: 7px 20px;
+
+
+/* M / 14 Medium */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+display: flex;
+align-items: center;
+text-align: center;
+
+
+border: 2px solid #D5D5D6;
+border-radius: 8px;
+
+
+/* Brand / Primary */
+color: #2B2D33;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.news-but-registr_close{
+/* Label */
+
+position: static;
+left: 20px;
+right: 20px;
+top: 7px;
+bottom: 7px;
+
+width: 184px;
+height: 36px;
+box-sizing: border-box;
+/* Seattle / 10 */
+
+background: none;
+border: 2px solid #E9EAEA;
+border-radius: 8px;
+
+/* M / 14 Medium */
+font-family: 'ALS Hauss';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* London / 120 */
+color: rgba(43, 45, 51, 0.24);
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.p{
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "ALS Houss-Bold";
+    src: url(./fonts/ALS_Hauss-Bold.woff);
+    font-style: bold;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ALS Hauss-Medium";
+    src: url(./fonts/ALS_Hauss-Medium.woff);
+    font-style: medium;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ALS Hauss";
+    src: url(./fonts/ALS_Hauss-Regular.woff);
+    font-style: normal;
+    font-weight: normal;
+}

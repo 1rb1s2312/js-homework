@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+
+.header{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0dfdf;
+    height: 80px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo-bank{
+    height: 60px;
+}
+.logo-empl{
+    height: 55px;
+}
+.logo-exit{
+    display: flex;
+    width: 17.2px;
+    height: 20px;
+    margin: 30px 11.2px 30px 35px;
+/* left: 15.83%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%; */
+
+}
+
+.nav-horizontal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+.nav-horizontal-empl{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mr-1{
+    margin-right: 10px;
+}
+
+

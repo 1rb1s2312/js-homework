@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-preview.css">
+    <link rel="stylesheet" href="style-news.css">
+    <link rel="stylesheet" href="style-popup.css">
+    <title>Школа по фронтенду</title>
+</head>
+
+<body>
+    <header class="header">
+        <span class="logo-bank">
+            <img class="logo-bank" src="image/logo-raiffeisen-bank.jpeg" alt="logo-raiffeisen-bank">
+        </span>
+        <nav class="nav-horizontal mr-1">
+            <div class="nav-horizontal-empl"> Данилов Владимир <img class="logo-empl" src="image/ava.png" alt="ava">
+            </div>
+            <div> <img class="logo-exit" src="image/Exit.png" alt="Exit"> </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="events">
+                <div class="events-preview">Ближайшие мероприятия</div>
+                <div class="events-title">Школа по фронтенду</div>
+                <div class="events-date">25.05.2020 · Офис в Нагатино</div>
+                <div class="events-button-record>"><input type="button" value="Записаться на курс"
+                        class="events-button-record"></div>
+            </div>
+            <h1 class="news-anons">Все мероприятия</h1>
+            <!--<nav class="nav-chapter nav-button-reg">
+                    <ul>
+                        <li><a href="#">IT Academy</a></li>
+                        <li><a href="#">Маркетинг</a></li>
+                        <li><a href="#">Retail</a></li>
+                        <li><a href="#">Остальные</a></li>
+                    </ul>
+                </nav>-->
+            <div class="nav-button-basic">
+                <div class="nav-button">
+                    <input id="reg01" type="radio" name="registration" value="1">
+                    <label for="reg01">IT Academy</label>
+                </div>
+                <div class="nav-button">
+                    <input id="reg02" type="radio" name="registration" value="2">
+                    <label for="reg02">Маркетинг</label>
+                </div>
+                <div class="nav-button">
+                    <input id="reg03" type="radio" name="registration" value="3">
+                    <label for="reg03">Retail</label>
+                </div>
+                <div class="nav-button">
+                    <input id="reg04" type="radio" name="registration" value="4">
+                    <label for="reg04">Остальные</label>
+                </div>
+            </div>
+            <section class="news">
+                <div class="news-post">
+                    <div class="news-post-date">
+                        25.05.2020
+                    </div>
+                    <div class="news-post-header">
+                        <h4 class="news-post-header-title">
+                            Венецианский карнавал танцев и богохульных плясок: смотрим вместе
+                        </h4>
+                        <div class="news-post-header-text">
+                            К посещению приглашаются сотрудники 18-
+                        </div>
+                    </div>
+                    <div class="news-post-like">
+                        <img class="news-post-like-img" src="image/shape.png"> 11
+                    </div>
+                    <div class="news-post-author">
+                        <div>Иннокентий Жданов</div>
+                        <div>Поликарпов Осипий</div>
+                    </div>
+                    <div class="news-post-registration">
+                        <input id="reg01" type="radio" name="registration" value="5">
+                        <label for="reg01">Зарегистрироваться</label>
+                    </div>
+                </div>
+
+                <div class="news-post">
+                    <div class="news-post-date">
+                        25.05.2020
+                    </div>
+                    <div class="news-post-header">
+                        <h4 class="news-post-header-title">
+                            Солнцестоим вместе или как провести выходные продуктивно
+                        </h4>
+                        <div class="news-post-header-text">
+                            Если вы любите солнце и стоять - то данный курс вам очень подойдет. Мы вместе будем стоять и смотреть на солнце. Чистый кайф.
+                        </div>
+                    </div>
+                    <div class="news-post-like">
+                        <img class="news-post-like-img" src="image/shape.png"> 110
+                    </div>
+                    <div class="news-post-author">
+                        <div>Николай Острецов</div>
+                    </div>
+                    <div class="news-post-reg_close">
+                        <input id="reg02" type="radio" name="registration" value="6" disabled>
+                        <label for="reg02">Регистрация закрыта</label>
+                    </div>
+                </div>
+
+                <div class="news-post">
+                    <div class="news-post-date">
+                        25.05.2020
+                    </div>
+                    <div class="news-post-header">
+                        <h4 class="news-post-header-title">
+                            Бредовые макеты и как с ними работать: спич о проблемах друзей фронтендеров
+                        </h4>
+                        <div class="news-post-header-text">
+                            Что делать если в дизайне, который отправил вам дизайнер, написаны бредовые тексты? Посмеяться?! Это что для вас шуточки?!
+                        </div>
+                    </div>
+                    <div class="news-post-like">
+                        <img class="news-post-like-img" src="image/shape.png"> 11
+                    </div>
+                    <div class="news-post-author">
+                        Акакий Шопский
+                    </div>
+                    <div class="news-post-registration">
+                        <input id="reg03" type="radio" name="registration" value="7">
+                        <label for="reg03">Зарегистрироваться</label>
+                    </div>
+                </div>
+
+                <div class="news-post">
+                    <div class="news-post-date">
+                        25.05.2020
+                    </div>
+                    <div class="news-post-header">
+                        <h4 class="news-post-header-title">
+                            Аукцион: лоснящаяся шкура золотого дракона Монина. Что скрывается в подвале офиса Нагатино?
+                        </h4>
+                        <div class="news-post-header-text">
+                            Если у вас ещё осталась зарплата: приходите, мы будем рады её забрать
+                        </div>
+                    </div>
+                    <div class="news-post-like">
+                        <img class="news-post-like-img" src="image/shape.png"> 11
+                    </div>
+                    <div class="news-post-author">
+                        Иван Стручков
+                    </div>
+                    <div class="news-post-reg_close">
+                        <input id="reg04" type="radio" name="registration" value="8" disabled>
+                        <label for="reg04">Регистрация закрыта</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="popup-bgr">
+            <div class="popup">
+                <div class="popup-title">Запись на мероприятие</div>
+                <div class="popup-prompt">Выберите необходимые мероприятия</div>
+                <div class="popup-events">
+                    <div class="popup-events-title">Венецианский карнавал танцев и богохульных плясок: смотрим вместе</div>
+                    <div class="popup-events-comment">К посещению приглашаются сотрудники 18-</div>
+                </div>
+                <div class="popup-buttons">
+                    <div class="popup-buttons-item">
+                        <input id="but_online" type="radio" name="type_registr" value="1">
+                        <label for="but_online">Онлайн</label>
+                    </div>
+                    <div class="popup-buttons-item">
+                        <input id="but_offline" type="radio" name="type_registr" value="2">
+                        <label for="but_offline">Оффлайн: офис Нагатино</label>
+                    </div>
+                </div>
+                <div class="popup-member">
+                    <div class="popup-member-prompt">Кто пойдет на мероприятие</div>
+                    <div class="popup-member-cont">
+                        <div class="popup-member-name">Логин или имя сотрудника</div>
+                    </div>
+                </div>
+                <div class="popup-comment">
+                    <div class="popup-comment-prompt">Комментарий</div>
+                    <div class="popup-comment-cont">
+                        <div class="popup-comment-text">Дополнительная информация</div>
+                    </div>
+                </div>
+                <div class="popup-button-events">
+                    <div class="popup-button-events-ghost">
+                    <div class="popup-button-events-reg"></div>
+                        <button class="but_registr">Зарегестрироваться</button>
+                    <!-- <div class="popup-button-events-cancel">
+                        <button class="but_cancel">Отменить</button>
+                    </div> -->
+                    <label class="but_cancel">Отменить</label>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<head>
+
+</head>
+
+</html>
