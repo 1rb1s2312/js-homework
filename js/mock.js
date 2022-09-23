@@ -44,14 +44,14 @@ export const randomCombi = () => {
 
 // напишите функцию возвращающую объект (event) с полями
 export const randomObject =() => {
-    const event = {
-        date, title, description, countLikes, names, registrationDisabled
+    let event = { 
+        // date, title, description, countLikes, names, registrationDisabled
     }
     event.date = randomDate();
     event.title = randomString();
     event.description = randomString();
     event.countLikes = randomInt(0,999);
-    event.names = randomObject();
+    event.names = randomCombi();
     event.registrationDisabled = randomBool();
     return event;
 }
@@ -66,7 +66,7 @@ export const events = () => {
 }
 
 // выведите в консоль результат выполнения функции
-export const print = (func) => {
+export const print = () => {
     const resultEvents = [];
     resultEvents = events();
     return resultEvents.forEach(resultEvent => { console.log(resultEvent)});
