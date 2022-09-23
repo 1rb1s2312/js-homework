@@ -547,21 +547,21 @@ margin: 0px 0px;
 
 @font-face {
     font-family: "ALS Houss-Bold";
-    src: url(./fonts/ALS_Hauss-Bold.woff);
+    src: url(../fonts/ALS_Hauss-Bold.woff);
     font-style: bold;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "ALS Hauss-Medium";
-    src: url(./fonts/ALS_Hauss-Medium.woff);
+    src: url(../fonts/ALS_Hauss-Medium.woff);
     font-style: medium;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "ALS Hauss";
-    src: url(./fonts/ALS_Hauss-Regular.woff);
+    src: url(../fonts/ALS_Hauss-Regular.woff);
     font-style: normal;
     font-weight: normal;
 }

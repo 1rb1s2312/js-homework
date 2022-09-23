@@ -36,8 +36,8 @@ export const randomString = () => {
 export const randomCombi = () => {
     const names = ['Петр', 'Василий', 'Николай', 'Олег', 'Павел'];
     const surnames = ['Иванов', 'Петров', 'Гагарин', 'Сюткин', 'Грозный'];
-    indexNames = Math.floor(Math.random() * names.length );
-    indexSurnames = Math.floor(Math.random() * surnames.length );
+    const indexNames = Math.floor(Math.random() * names.length );
+    const indexSurnames = Math.floor(Math.random() * surnames.length );
     return `${names[indexNames]} ${surnames[indexSurnames]}`;
 }
 
@@ -67,7 +67,7 @@ export const events = () => {
 
 // выведите в консоль результат выполнения функции
 export const print = () => {
-    const resultEvents = [];
+    let resultEvents = [];
     resultEvents = events();
     return resultEvents.forEach(resultEvent => { console.log(resultEvent)});
 }
