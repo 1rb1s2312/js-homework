@@ -7,7 +7,7 @@ export const randomBool = () =>{
 export const randomDate =() => {
     const begDa = new Date(1);
     const endDa = new Date();
-    return new Date(Math.random() * (endDa - begDa) + begDa);
+    return new Date(Math.floor(Math.random() * (endDa - begDa)) + 1);
 }
 
 //случайное целое число в диапазоне от min-max
@@ -60,7 +60,7 @@ export const randomObject =() => {
 export const events = () => {
     const arrayEvents = [];
     for (let i=0; i<9; i++){
-        arrayEvents.push = randomObject();
+        arrayEvents.push(randomObject());
     }
     return arrayEvents;
 }
@@ -69,5 +69,6 @@ export const events = () => {
 export const print = () => {
     let resultEvents = [];
     resultEvents = events();
+    console.log(resultEvents);
     return resultEvents.forEach(resultEvent => { console.log(resultEvent)});
 }
