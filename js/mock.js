@@ -1,3 +1,5 @@
+// 1. Делаем mock (рандомные дата)
+
 //случайное булевое число
 export const randomBool = () =>{
     return Math.floor(Math.random() * 2); //упрощенная схема для целых чисел
