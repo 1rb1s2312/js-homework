@@ -1,17 +1,25 @@
 // 2. Получение данных с сервера
-import 'whatwg-fetch';
-
-export default () => {
-    const result = await getData();
+export default async(callback) => {
+    
+    const resultData = await getData(callback);
+    return resultData;
+    
 }
 
-async function getData() {
+async function getData(callback) {
+    const currentPath = `/data`; 
+    let resultGetData
     try{
-        const response = await fetch('/Data');
-        const result = response.json;
-        return result;
+        const response = await fetch(currentPath);
+        resultGetData = await response.json();
     }
     catch (error){
-        return [];
+        return [error];
+    }
+
+    if (callback){
+        callback(resultGetData)
+    }else{
+    return resultGetData
     }
 }

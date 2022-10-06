@@ -72,5 +72,4 @@ export const print = () => {
     let resultEvents = [];
     resultEvents = events();
     console.log(resultEvents);
-    return resultEvents.forEach(resultEvent => { console.log(resultEvent)});
 }
