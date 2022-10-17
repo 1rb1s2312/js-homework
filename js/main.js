@@ -1,5 +1,4 @@
 // Объединяем файлы js
-import _ from 'lodash' //TO_DO
 import {print} from '/js/mock.js'
 import getData from '/js/getData.js'
 import renderDataTable from '/js/renderList.js'
