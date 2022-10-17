@@ -1,11 +1,10 @@
-module.exports = {
-    // const path = require('path')
+const path = require('path');
 
-    entry: '../main.js',
-    module:{
-        rules: {
-            // { test: /\/css$/, use: ['style-loader', 'css-loader']},
-            // { test: /\.(js)$/, use: 'babel-loader' }
-        }
-    }
-}
+module.exports = {
+  entry: './js/main.js',
+  sourceType: module,
+  output: {
+    filename: 'output.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};

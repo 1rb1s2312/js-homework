@@ -9,9 +9,9 @@
     "overrides": [
     ],
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": 7
     },
     "rules": {
-        "no-console": "off"
+        // "no-console": "off"
     }
 }
