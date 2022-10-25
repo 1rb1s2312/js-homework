@@ -4,7 +4,7 @@ const dicRead   = 'GET'
 const dicUpdate = 'PUT'
 const dicDelete = 'DELETE'
 
-async function restApi (method = dicRead, path, data = null) {
+async function createApi (method = dicRead, path, data = null) {
     const headers = {}
     let valueStr
 
@@ -27,7 +27,7 @@ async function restApi (method = dicRead, path, data = null) {
     }
 }
 
-export class apiCRUD {
+export class ApiCrud {
     constructor(method, path, data){
         this.method = method
         this.path = path 
@@ -47,3 +47,5 @@ export class apiCRUD {
         return createApi(method, path, data)
     }
 }
+
+export default ApiCrud

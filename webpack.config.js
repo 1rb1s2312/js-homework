@@ -4,7 +4,8 @@ module.exports = {
   entry: './js/main.js',
   sourceType: module,
   output: {
-    filename: 'output.js',
     path: path.resolve(__dirname, 'dist'),
+    filename: 'output.js',
   },
+  watch: true
 };
