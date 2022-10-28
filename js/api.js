@@ -28,23 +28,22 @@ async function createApi (method = dicRead, path, data = null) {
 }
 
 export class ApiCrud {
-    constructor(method, path, data){
-        this.method = method
+    constructor(path, data){
         this.path = path 
         this.data = data
     }
 
-    create (method = dicCreate, path, data) {
-        return createApi(method, path, data)
+    create (path, data) {
+        return createApi(dicCreate, path, data)
     }
-    read (method, path, data) {
-        return createApi(method, path)
+    read (path, data) {
+        return createApi(dicRead, path)
     }
-    update (method = dicUpdate, path, data) {
-        return createApi(method, path, data)
+    update (path, data) {
+        return createApi(dicUpdate, path, data)
     }
-    delete (method = dicDelete, path, data) {
-        return createApi(method, path, data)
+    delete (path, data) {
+        return createApi(dicDelete, path, data)
     }
 }
 
