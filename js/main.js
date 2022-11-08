@@ -1,9 +1,9 @@
 // Объединяем файлы js
-import {events} from '/js/mock.js'
-import getData from '/js/getData.js'
-import renderDataTable from '/js/renderList.js'
-import {openPopup, closePopup} from '/js/popup.js'
-import {ApiCrud} from '/js/api.js'
+import {events} from './mock.js'
+import getData from './getData.js'
+import renderDataTable from './renderList.js'
+import {openPopup, closePopup} from './popup.js'
+import {ApiCrud} from './api.js'
 
 
     console.log(events())

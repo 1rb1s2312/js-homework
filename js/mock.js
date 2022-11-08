@@ -14,9 +14,7 @@ const strings = [
     const surnames = ['Иванов', 'Петров', 'Гагарин', 'Сюткин', 'Грозный']
 
 //случайное булевое число
-export const getRandomBool = () =>{
-    return Math.floor(Math.random() * 2) == 1 ? true : false
-}
+export const getRandomBool = () => Math.random() * 2 == 1;
 
 //случайная дата
 export const getRandomDate =() => {

@@ -2,7 +2,7 @@
   "name": "learn",
   "version": "1.0.0",
   "description": "demo project",
-  "private":"true",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint ./js/main.js",
@@ -15,7 +15,6 @@
     "babel-eslint": "^10.1.0",
     "cookie-parser": "^1.4.5",
     "date-fns": "^2.29.3",
-    "eslint-config-airbnb": "19.0.4",
     "express": "4.17.1",
     "http-errors": "1.8.0",
     "morgan": "1.10.0",
@@ -23,9 +22,9 @@
   },
   "devDependencies": {
     "eslint": "7.13.0",
-    "webpack": "5.74.0",
+    "webpack": "4.42.0",
     "webpack-cli": "3.3.12",
-    "webpack-dev-server": "4.11.1"
+    "webpack-dev-server": "3.10.3"
   },
   "type": "commonjs"
 }

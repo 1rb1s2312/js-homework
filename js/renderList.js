@@ -1,6 +1,6 @@
 // 3.1 Работа с DOM
 
-import { openPopup } from "/js/popup.js"
+import { openPopup } from "./popup.js"
 
 const postAuthor = 'Author'
 const postDate = 'Date'
