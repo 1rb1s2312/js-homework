@@ -1,13 +1,6 @@
 // 2. Получение данных с сервера
-// export default async(callback) => {
-    
-//     const resultData = await getData(callback);
-//     return resultData;
-    
-// }
-
 export default async function getData(callback) {
-    const currentPath = '/data'
+    const currentPath = '../server/data'
     let resultGetData
     try{
         const response = await fetch(currentPath);

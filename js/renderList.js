@@ -92,10 +92,7 @@ const createNewPostRegistration = (isReg) => {
 
     return registration
 }
-
-const renderDataTable = (data) => {
-    // Создаем секцию Новости
-    const createNews = (data) =>{
+const createNews = (data) =>{
     const count = data.length - 1
     const section  = document.createElement('section')
     section.classList.add('news')
@@ -125,6 +122,9 @@ const renderDataTable = (data) => {
         }
         return section
     } 
+
+const renderDataTable = (data) => {
+    // Создаем секцию Новости
     const appendHTML = createNews(data)
     appendDataInHTML(appendHTML)
 
